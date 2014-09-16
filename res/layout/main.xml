@@ -3,7 +3,13 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-  <TextView android:id="@+id/memoryUsage"
+  <TextView android:id="@+id/vmUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/procUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/sysUsage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
   <Button android:text="Allocate 1MB"
@@ -12,6 +18,14 @@
           android:layout_height="wrap_content"/>
   <Button android:text="Allocate 10MB"
           android:id="@+id/allocateTen"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+  <Button android:text="Allocate 100MB (JNI malloc)"
+          android:id="@+id/mallocHundred"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+  <Button android:text="Allocate until full (JNI malloc)"
+          android:id="@+id/mallocFill"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"/>
 </LinearLayout>
